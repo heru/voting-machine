@@ -53,4 +53,31 @@ describe("hello", () => {
     console.log(`Total GNs :: ${voteBankData.gn}`)
   });
 
+  it("Vote for GN", async () => {
+    const tx = await program.methods.gibVote({ gn: {} })
+      .accounts({
+        voteAccount: voteBank.publicKey,
+      })
+      .rpc();
+    console.log("TxHash ::", tx);
+
+
+    let voteBankData = await program.account.voteBank.fetch(voteBank.publicKey);
+    console.log(`Total GMs :: ${voteBankData.gm}`)
+    console.log(`Total GNs :: ${voteBankData.gn}`)
+  });
+  it("Vote for GN", async () => {
+    const tx = await program.methods.gibVote({ gn: {} })
+      .accounts({
+        voteAccount: voteBank.publicKey,
+      })
+      .rpc();
+    console.log("TxHash ::", tx);
+
+
+    let voteBankData = await program.account.voteBank.fetch(voteBank.publicKey);
+    console.log(`Total GMs :: ${voteBankData.gm}`)
+    console.log(`Total GNs :: ${voteBankData.gn}`)
+  });
+
 });
