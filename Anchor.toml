@@ -14,7 +14,7 @@ hello = "4foq4U1K5zSvsdurfqzqhTkAysiLVnnvg2Bwkdn8v1xy"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/home/ubuntu/.config/solana/id.json"
 
 [scripts]
