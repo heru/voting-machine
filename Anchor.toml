@@ -1,0 +1,22 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+hello = "4foq4U1K5zSvsdurfqzqhTkAysiLVnnvg2Bwkdn8v1xy"
+
+[program.devnet]
+hello = "4foq4U1K5zSvsdurfqzqhTkAysiLVnnvg2Bwkdn8v1xy"
+
+[program.mainnet]
+hello = "4foq4U1K5zSvsdurfqzqhTkAysiLVnnvg2Bwkdn8v1xy"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/ubuntu/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+copy-idl = "mkdir -p app/src/idl && cp target/idl/hello.json app/src/idl/hello.json"
