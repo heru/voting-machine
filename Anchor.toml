@@ -1,5 +1,5 @@
 [features]
-seeds = false
+seeds = true
 skip-lint = false
 [programs.localnet]
 hello = "4foq4U1K5zSvsdurfqzqhTkAysiLVnnvg2Bwkdn8v1xy"
